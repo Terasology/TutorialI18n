@@ -1,0 +1,9 @@
+{
+    "id" : "TutorialI18n",
+    "version" : "0.1.0-SNAPSHOT",
+    "author" : "",
+    "displayName" : "TutorialI18n",
+    "description" : "",
+    "dependencies" : [],
+    "serverSideOnly" : false
+}
