@@ -13,10 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@RegisterSystem
-public class GreeterSystem extends BaseComponentSystem {
+package org.terasology;
+import org.terasology.entitySystem.systems.RegisterSystem;
+import org.terasology.entitySystem.systems.BaseComponentSystem;
+import java.util.logging.Logger;
+import org.slf4j.LoggerFactory;
+import org.terasology.logic.players.event.OnPlayerSpawnedEvent;
+import org.terasology.entitySystem.entity.EntityRef;
+import org.terasology.entitySystem.event.ReceiveEvent;
 
-    private static final Logger logger = LoggerFactory.getLogger(GreeterSystem.class);
+@RegisterSystem
+public class GreetInEnglish extends BaseComponentSystem {
+
+    private static final Logger logger = (Logger)LoggerFactory.getLogger(GreetInEnglish.class);
 
     @ReceiveEvent
     public void onPlayerSpawn(OnPlayerSpawnedEvent event, EntityRef player) {
